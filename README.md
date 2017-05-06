@@ -1,15 +1,39 @@
 # HardLife_site
-Site HardLife RP
 
+**Site HardLife RP**
 
-# Code source du site HardLife RP
+*Conçu pour héberger les activités de la team HardLife*
 
+### Auteurs
 
-Tous est donné, sauf l'accès à la BDD !
+  - GARCIA Guillaume : AOSauron @HardLifeTeam
+  - FORTIN Pierre : AODeltaB @HardLifeTeam
 
-Pannel Inscription / Connexion à travailler
+### Dépendances
 
-Dump MySQL à fournir
+#### For running the site on a server
 
+  - Linux based server
+  - `mysql` package
+  - `apache2` package
+  - `bind` package
+
+#### For dev  
+
+  - `mysql` package
+  - Un client FTP est recommandé
+
+### Build
+
+### Utilisation
+
+  - Tous est donné, sauf l'accès à la BDD !
+
+### Roadmap : étape à faire
+
+  - Pannel Inscription / Connexion à travailler
+  - Dump MySQL à fournir
+
+### Notes des devs
 
 Vous avez 4 heures.
