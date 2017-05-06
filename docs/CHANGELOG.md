@@ -4,6 +4,6 @@
 
 *Changelog for hardlife-rp.ovh web site*
 
-#### Changelog 07/05/2017
+### Changelog - v1.0.0.0 - 07/05/2017
 
   - Add the "username" droplist with Logout and Profile (both of them redirect to logout.php for now, please be patient).
