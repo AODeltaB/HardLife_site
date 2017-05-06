@@ -6,7 +6,7 @@ $pass_hache = sha1($_POST['mdp']);
         try
         {
             $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-            $bdd = new PDO('mysql:host=localhost;dbname=siteweb', 'root', 'Pierre1998',   $pdo_options);
+            $bdd = new PDO('mysql:host=localhost;dbname=database', 'login', 'mdp',   $pdo_options);
     
             $req = $bdd->prepare('INSERT INTO membres(pseudo, mdp, mail, inscritdate) VALUES(:pseudo, :mdp, :mail, CURDATE())');
             $req->execute(array(
@@ -45,11 +45,11 @@ $pass_hache = sha1($_POST['mdp']);
     }
     if($_POST['mdp'] != $_POST['mdp_confirm'])
     {
-        echo 'Les deux mots de passe doivent être identiques';
+        echo 'Les deux mots de passe doivent Ãªtre identiques';
     }
     if($_POST['mail'] != $_POST['mail_confirm'])
     {
-        echo 'Les deux adresses email doivent être identiques';
+        echo 'Les deux adresses email doivent Ãªtre identiques';
     }
     header('Location: inscription.php');
 ?>
