@@ -6,7 +6,7 @@
  
  define('DBHOST', 'localhost');
  define('DBUSER', 'root');
- define('DBPASS', 'Pierre1998');
+ define('DBPASS', 'mdp');
  define('DBNAME', 'siteweb');
  
  $bdd = mysql_connect(DBHOST,DBUSER,DBPASS);
