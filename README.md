@@ -1,4 +1,4 @@
-# HardLife_site
+# HardLife site
 
 **Site HardLife RP**
 
@@ -6,13 +6,8 @@
 
 ### Auteurs
 
-<<<<<<< HEAD
-  - GARCIA Guillaume : AOSauron @HardLifeTeam
-  - FORTIN Pierre : AODeltaB @HardLifeTeam
-=======
-Tout est donné, sauf l'accès à la BDD !
->>>>>>> origin/master
-
+  - GARCIA Guillaume : [AOSauron](https://github.com/AOSauron) @HardLifeTeam
+  - FORTIN Pierre : [AODeltaB](https://github.com/AODeltaB) @HardLifeTeam
 
 ### Dépendances
 
@@ -26,12 +21,15 @@ Tout est donné, sauf l'accès à la BDD !
 #### For dev  
 
   - `mysql` package
-  - Un client FTP est recommandé
+  - Un client **FTP** est recommandé
 
 ### Build
+  
+  - ...
 
 ### Utilisation
 
+  - Adresse du site en ligne : [http://hardlife-rp.ovh/](http://hardlife-rp.ovh/)
 
 ### Roadmap : étape à faire
 
