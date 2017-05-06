@@ -21,7 +21,7 @@
         <li><a href="equipe.php">Notre équipe</a></li>
         <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>
 		<li><a href="media.php">Média</a></li>
-	
+
 	 <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Client<i class="material-icons right">arrow_drop_down</i></a></li>
 
   <!-- Dropdown Structure -->
@@ -30,7 +30,7 @@
     <li><a href="connexion.php">Connexion</a></li>
     <li class="divider"></li>
   </ul>
-	
+
 </ul>
       <ul id="nav-mobile" class="side-nav">
         <li><a href="index.php">Acceuil</a></li>
@@ -157,22 +157,12 @@
           <p class="grey-text text-lighten-4">Nous sommes un serveur à l'écoute de nos joueurs, attentif et particulièrement drôle... ou pas.</p>
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Option</h5>
-          <ul>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
-          </ul>
-        </div>
+
         <div class="col l3 s12">
           <h5 class="white-text">Sociabilité</h5>
           <ul>
             <li><a class="white-text" href="https://discord.gg/h2uhwUW">Discord</a></li>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
+
           </ul>
         </div>
       </div>
