@@ -1,33 +1,25 @@
-	<?php
-
+<?php
+session_start()
 	// Include le fichier config avec les informations DB
 	include 'config.php';
+	include 'connexion.php';
 	// Hachage du mot de passe
-	$pass_hache = sha1($_POST['mdp']);
-
-	// Vérification des identifiants
-
-	$reqselect = $bdd->prepare('SELECT id FROM membres WHERE pseudo = :pseudo AND mdp = :mdp');
-	$reqselect->execute(array(
-	    'pseudo' => $pseudo,
-	    'mdp' => $pass_hache));
-
-	$resultat = $reqselect->fetch();
-
-catch(Exception $e)
+	
+if(isset($_POST['submit]'))
 {
-  die('Erreur : '.$e->getMessage());
+	$username = $_POST['pseudo'];
+	$password = $_POST['mdp'];
+	
+	if($username&&$password)
+	{
+		$password = sha1($password);
+		$query = $bdd=>prepare("SELECT * FROM membres where pseudo='$username'&&mdp='$password'");
+		$rows = mysql_num_rows($query);
+		if ($raws==1){
+			$_SESSION['pseudo']=$username;	
+			header('Location: media.php');	
+		}else echo "Pseudo ou Password incorrect";
+	} else echo"Veuillez saisir tous les champs";
+	
 }
-	if (!$resultat)
-	{
-	    echo 'Mauvais identifiant ou mot de passe !';
-	}
-	else
-	{
-	    session_start();
-	    $_SESSION['id'] = $resultat['id'];
-	    $_SESSION['pseudo'] = $pseudo;
-	    echo 'Vous êtes connecté !';
-			header('Location: index.php');
-	}
 ?>

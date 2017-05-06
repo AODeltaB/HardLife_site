@@ -1,7 +1,8 @@
 <?php
 include 'config.php';
+include 'inscription.php';
 	// Hachage du mot de passe
-$pass_hache = sha1($_POST['mdp']);
+$pass_hache = md5($_POST['mdp']);
     if($_POST['pseudo'] != NULL AND $_POST['mdp'] != NULL AND $_POST['mdp_confirm'] != NULL AND $_POST['mail'] != NULL AND $_POST['mail_confirm'] != NULL AND $_POST['mdp'] == $_POST['mdp_confirm'] AND $_POST['mail'] == $_POST['mail_confirm'])
     {
         try
@@ -13,7 +14,7 @@ $pass_hache = sha1($_POST['mdp']);
             'mail' => $_POST['mail']
             ));
 
-            header('Location: inscription.php');
+            header('Location: fin_inscription.php');
         }
         catch(Exception $e)
         {
@@ -49,5 +50,5 @@ $pass_hache = sha1($_POST['mdp']);
     {
         echo 'Les deux adresses email doivent être identiques';
     }
-    header('Location: index.php');
+    header('Location: fin_inscription.php');
 ?>

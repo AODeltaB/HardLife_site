@@ -10,6 +10,28 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body class="blurBg-false" style="background-color:#EBEBEB">
+<?php
+// include 'config.php';
+session_start();
+if(isset($_POST['submit']))
+{
+	$username = $_POST['pseudo'];
+	$password = $_POST['mdp'];
+	
+	if($username&&$password){
+	
+		$password = md5($password);
+		$connect = mysql_connect('localhost','root','Pierre1998');
+		mysql_select_db('siteweb');
+		$query = mysql_query("SELECT * FROM membres WHERE pseudo='$username'&&mdp='$password'");
+		$rows = mysql_num_rows($query);
+		if ($rows==1){
+			$_SESSION['pseudo']=$username;	
+			header('Location: media.php');	
+		}else echo "Pseudo ou Password incorrect";
+	} else echo"Veuillez saisir tous les champs";
+}
+?>
 
  <nav class="white" role="navigation">
     <div class="nav-wrapper container">
@@ -44,7 +66,7 @@
     </div>
   </nav>
 
-	<form method="post" action="connexion_post.php" class="connexion">
+	<form method="POST" action="connexion.php">
 	<p>
   <label for="pseudo">Pseudo</label><br />
 	<input type="text" name="pseudo" id="pseudo" size="30" />
@@ -52,7 +74,7 @@
 	<br />
 	<label for="mdp">Mot de passe</label><br />
 	<input type="password" name="mdp" id="mdp" size="30" /><br />
-	<input type="submit" value="Valider" class="valider" />
+	<input type="submit" value="Valider" name="submit" id="submit" class="valider" />
 		</p>
 	</form>
 

@@ -21,7 +21,7 @@
 
 
 
-  <  <nav class="white" role="navigation">
+  <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.php" class="brand-logo">HardLife RP</a>
       <ul class="right hide-on-med-and-down">
@@ -54,8 +54,10 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
-
+	<?php
+	session_start();
+	echo "Bienvenue " .$_SESSION['pseudo'];
+	?>
   
       <div class="video-container">
         <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
