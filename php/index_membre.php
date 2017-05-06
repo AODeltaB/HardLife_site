@@ -22,7 +22,7 @@ if (!isset($_SESSION['pseudo'])) {
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.php" class="brand-logo">HardLife RP</a>
+      <a id="logo-container" href="index_membre.php" class="brand-logo">HardLife RP</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.php">Accueil</a></li>
 		<li><a href="/forum">Forum</a></li>
@@ -41,7 +41,7 @@ if (!isset($_SESSION['pseudo'])) {
 
 </ul>
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="index.php">Acceuil</a></li>
+        <li><a href="index_membre.php">Acceuil</a></li>
 		<li><a href="/forum">Forum</a></li>
         <li><a href="equipe.php">Notre équipe</a></li>
         <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>
