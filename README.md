@@ -6,8 +6,8 @@
 
 ### Auteurs
 
-  - GARCIA Guillaume : [AOSauron](https://github.com/AOSauron) @HardLifeTeam
-  - FORTIN Pierre : [AODeltaB](https://github.com/AODeltaB) @HardLifeTeam
+  - GARCIA Guillaume : [AOSauron](https://github.com/AOSauron) @HardLifeDev/hardlifeteam
+  - FORTIN Pierre : [AODeltaB](https://github.com/AODeltaB) @HardLifeDev/hardlifeteam
 
 ### Dépendances
 
