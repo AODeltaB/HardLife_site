@@ -6,8 +6,8 @@
 
 ### Auteurs
 
-  - GARCIA Guillaume : AOSauron @HardLifeTeam
-  - FORTIN Pierre : AODeltaB @HardLifeTeam
+  - GARCIA Guillaume : [AOSauron](https://github.com/AOSauron) @HardLifeTeam
+  - FORTIN Pierre : [AODeltaB](https://github.com/AODeltaB) @HardLifeTeam
 
 ### Dépendances
 
@@ -21,12 +21,15 @@
 #### For dev  
 
   - `mysql` package
-  - Un client FTP est recommandé
+  - Un client **FTP** est recommandé
 
 ### Build
+  
+  - ...
 
 ### Utilisation
 
+  - ...
 
 ### Roadmap : étape à faire
 
