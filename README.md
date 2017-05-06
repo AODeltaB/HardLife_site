@@ -24,12 +24,16 @@
   - Un client **FTP** est recommandé
 
 ### Build
-  
+
   - ...
 
 ### Utilisation
 
   - Adresse du site en ligne : [http://hardlife-rp.ovh/](http://hardlife-rp.ovh/)
+
+### Changelog
+
+  - La liste des modifications et corrections pour chaque version est présente dans le [changelog](docs/CHANGELOG.md).
 
 ### Roadmap : étape à faire
 
