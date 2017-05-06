@@ -5,7 +5,7 @@ Site HardLife RP
 # Code source du site HardLife RP
 
 
-Tous est donné, sauf l'accès à la BDD !
+Tout est donné, sauf l'accès à la BDD !
 
 Pannel Inscription / Connexion à travailler
 
