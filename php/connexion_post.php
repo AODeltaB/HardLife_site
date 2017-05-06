@@ -1,11 +1,10 @@
-
 	<?php
+	include('config.php');
 	// Hachage du mot de passe
 	$pass_hache = sha1($_POST['mdp']);
 
 	// Vérification des identifiants
-  $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-  $bdd = new PDO('mysql:host=localhost;dbname=database', 'login', 'mdp',   $pdo_options);
+
 	$req = $bdd->prepare('SELECT id FROM membres WHERE pseudo = :pseudo AND mdp = :mdp');
 	$req->execute(array(
 	    'pseudo' => $pseudo,
