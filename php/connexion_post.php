@@ -1,25 +1,22 @@
 <?php
-session_start()
-	// Include le fichier config avec les informations DB
-	include 'config.php';
-	include 'connexion.php';
-	// Hachage du mot de passe
-
-if(isset($_POST['submit]'))
+// include 'config.php';
+session_start();
+if(isset($_POST['submit']))
 {
 	$username = $_POST['pseudo'];
 	$password = $_POST['mdp'];
 
-	if($username&&$password)
-	{
-		$password = sha1($password);
-		$query = $bdd=>prepare("SELECT * FROM membres where pseudo='$username'&&mdp='$password'");
+	if($username&&$password){
+
+		$password = md5($password);
+		$connect = mysql_connect('localhost','root','Pierre1998');
+		mysql_select_db('siteweb');
+		$query = mysql_query("SELECT * FROM membres WHERE pseudo='$username'&&mdp='$password'");
 		$rows = mysql_num_rows($query);
-		if ($raws==1){
+		if ($rows==1){
 			$_SESSION['pseudo']=$username;
-			header('Location: index_membre.php');	
+			header('Location: media.php');
 		}else echo "Pseudo ou Password incorrect";
 	} else echo"Veuillez saisir tous les champs";
-
 }
 ?>

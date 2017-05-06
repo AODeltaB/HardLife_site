@@ -6,7 +6,7 @@ if (!isset($_SESSION['pseudo'])) {
 }
 ?>
 
-!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="fr">
 <head>
