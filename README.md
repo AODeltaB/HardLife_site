@@ -1,4 +1,4 @@
-# HardLife_site
+# HardLife site
 
 **Site HardLife RP**
 
@@ -6,13 +6,8 @@
 
 ### Auteurs
 
-<<<<<<< HEAD
   - GARCIA Guillaume : AOSauron @HardLifeTeam
   - FORTIN Pierre : AODeltaB @HardLifeTeam
-=======
-Tout est donné, sauf l'accès à la BDD !
->>>>>>> origin/master
-
 
 ### Dépendances
 
