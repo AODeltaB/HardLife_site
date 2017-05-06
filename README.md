@@ -29,7 +29,7 @@
 
 ### Utilisation
 
-  - ...
+  - Adresse du site en ligne : [http://hardlife-rp.ovh/](http://hardlife-rp.ovh/)
 
 ### Roadmap : étape à faire
 
