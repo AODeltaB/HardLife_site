@@ -1,17 +1,18 @@
 	<?php
-	include('config.php');
+
+	// Include le fichier config avec les informations DB
+	include 'config.php';
 	// Hachage du mot de passe
 	$pass_hache = sha1($_POST['mdp']);
 
 	// Vérification des identifiants
 
-	$req = $bdd->prepare('SELECT id FROM membres WHERE pseudo = :pseudo AND mdp = :mdp');
-	$req->execute(array(
+	$reqselect = $bdd->prepare('SELECT id FROM membres WHERE pseudo = :pseudo AND mdp = :mdp');
+	$reqselect->execute(array(
 	    'pseudo' => $pseudo,
 	    'mdp' => $pass_hache));
 
-	$resultat = $req->fetch();
-  header('Location: connexion.php');
+	$resultat = $reqselect->fetch();
 
 catch(Exception $e)
 {
@@ -27,5 +28,6 @@ catch(Exception $e)
 	    $_SESSION['id'] = $resultat['id'];
 	    $_SESSION['pseudo'] = $pseudo;
 	    echo 'Vous êtes connecté !';
+			header('Location: index.php');
 	}
 ?>

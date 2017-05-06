@@ -1,13 +1,13 @@
 <?php
-include('config.php');
+include 'config.php';
 	// Hachage du mot de passe
 $pass_hache = sha1($_POST['mdp']);
     if($_POST['pseudo'] != NULL AND $_POST['mdp'] != NULL AND $_POST['mdp_confirm'] != NULL AND $_POST['mail'] != NULL AND $_POST['mail_confirm'] != NULL AND $_POST['mdp'] == $_POST['mdp_confirm'] AND $_POST['mail'] == $_POST['mail_confirm'])
     {
         try
         {
-            $req = $bdd->prepare('INSERT INTO membres(pseudo, mdp, mail, inscritdate) VALUES(:pseudo, :mdp, :mail, CURDATE())');
-            $req->execute(array(
+            $reqpost = $bdd->prepare('INSERT INTO membres(pseudo, mdp, mail, inscritdate) VALUES(:pseudo, :mdp, :mail, CURDATE())');
+            $reqpost->execute(array(
             'pseudo' => $_POST['pseudo'],
             'mdp' => $pass_hache,
             'mail' => $_POST['mail']
@@ -49,5 +49,5 @@ $pass_hache = sha1($_POST['mdp']);
     {
         echo 'Les deux adresses email doivent être identiques';
     }
-    header('Location: inscription.php');
+    header('Location: index.php');
 ?>
