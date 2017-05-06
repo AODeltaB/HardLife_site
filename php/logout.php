@@ -9,4 +9,8 @@ session_destroy();
 setcookie('pseudo', '');
 setcookie('password', '');
 
+echo '<div id="ok"><center>Vous allez être redirigé vers l accueil</center></div>
+<script type="text/javascript"> window.setTimeout("location=(\'index.php\');",3000) </script>'
+
+
 ?>

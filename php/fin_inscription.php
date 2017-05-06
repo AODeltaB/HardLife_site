@@ -12,7 +12,7 @@
 </head>
 
 <body>
-                
+
 	<center><div class="preloader-wrapper active">
     <div class="spinner-layer spinner-red-only">
       <div class="circle-clipper left">
@@ -25,20 +25,13 @@
     </div>
   </div>
 			</center>
-	
-			
 <?php
-	
-				
-				
-				
-				
-				echo '<div id="ok">Inscription réussit. Un message vous a été envoyé sur votre boîte email pour valider votre inscription.</div>                        
-				<script type="text/javascript"> window.setTimeout("location=(\'index.html\');",3000) </script>'
-                
+				echo '<div id="ok"><center>Inscription rÃ©ussi. Vous allez Ãªtre redirigÃ© vers l accueil</center></div>
+				<script type="text/javascript"> window.setTimeout("location=(\'index.php\');",3000) </script>'
+
 ?>
-		
-		
+
+
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
@@ -46,5 +39,3 @@
 		</body>
 
 </html>
-
-
