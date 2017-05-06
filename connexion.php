@@ -44,18 +44,6 @@
     </div>
   </nav>
 
-<!-- Start Formoid form-->
-<link rel="stylesheet" href="connexion_files/formoid1/formoid-solid-red.css" type="text/css" />
-<script type="text/javascript" src="connexion_files/formoid1/jquery.min.js"></script>
-<form class="formoid-solid-red" style="background-color:#FFFFFF;font-size:14px;font-family:'Comic Sans MS',cursive;color:#34495E;max-width:480px;min-width:150px" method="post"><div class="title"><h2>Connexion</h2></div>
-	<div class="element-input"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="text" name="input" required="required" placeholder="Pseudo"/><span class="icon-place"></span></div></div>
-	<div class="element-input"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="password" name="input1" required="required" placeholder="Password"/><span class="icon-place"></span></div></div>
-<div class="submit"><input type="submit" value="Confirmer"/></div>
-</form>
-<p class="frmd"><a href="192.168.1.21/index.html"></a> 
-</p><script type="text/javascript" src="connexion_files/formoid1/formoid-solid-red.js"></script>
-<!-- Stop Formoid form-->
-
 
   <footer class="page-footer teal">
     <div class="container">
