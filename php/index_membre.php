@@ -30,7 +30,7 @@ if (!isset($_SESSION['pseudo'])) {
         <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>
 		<li><a href="media.php">Média</a></li>
 
-	 <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Client<i class="material-icons right">arrow_drop_down</i></a></li>
+	 <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><?php echo htmlentities(trim($_SESSION['pseudo'])); ?><i class="material-icons right">arrow_drop_down</i></a></li>
 
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
