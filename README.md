@@ -9,6 +9,7 @@
   - GARCIA Guillaume : AOSauron @HardLifeTeam
   - FORTIN Pierre : AODeltaB @HardLifeTeam
 
+
 ### Dépendances
 
 #### For running the site on a server
@@ -27,7 +28,6 @@
 
 ### Utilisation
 
-  - Tous est donné, sauf l'accès à la BDD !
 
 ### Roadmap : étape à faire
 
@@ -36,4 +36,5 @@
 
 ### Notes des devs
 
-Vous avez 4 heures.
+  - Vous avez 4 heures.
+  - Tout est donné, sauf l'accès à la BDD !
