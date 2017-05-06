@@ -44,6 +44,18 @@
     </div>
   </nav>
 
+	<form method="post" action="connexion_post.php" class="connexion">
+	<p>
+  <label for="pseudo">Pseudo</label><br />
+	<input type="text" name="pseudo" id="pseudo" size="30" />
+	<br />
+	<br />
+	<label for="mdp">Mot de passe</label><br />
+	<input type="password" name="mdp" id="mdp" size="30" /><br />
+	<input type="submit" value="Valider" class="valider" />
+		</p>
+	</form>
+
 	<?php
 	// Hachage du mot de passe
 	$pass_hache = sha1($_POST['mdp']);
