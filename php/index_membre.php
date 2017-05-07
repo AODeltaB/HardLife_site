@@ -13,7 +13,6 @@ if (!isset($_SESSION['pseudo'])) {
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>HardLife RP</title>
-
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -24,7 +23,7 @@ if (!isset($_SESSION['pseudo'])) {
     <div class="nav-wrapper container">
       <a id="logo-container" href="index_membre.php" class="brand-logo">HardLife RP</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="index.php">Accueil</a></li>
+        <li><a href="index_membre.php">Accueil</a></li>
 		<li><a href="/forum">Forum</a></li>
         <li><a href="equipe.php">Notre équipe</a></li>
         <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>

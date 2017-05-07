@@ -1,57 +1,56 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>HardLife RP</title>
-
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  
-  
 </head>
-
 
 <body>
 
-  <nav class="white" role="navigation">
+    <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.php" class="brand-logo">HardLife RP</a>
+      <a id="logo-container" href="index_membre.php" class="brand-logo">HardLife RP</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="index.php">Accueil</a></li>
+        <li><a href="index_membre.php">Accueil</a></li>
 		<li><a href="/forum">Forum</a></li>
         <li><a href="equipe.php">Notre équipe</a></li>
-        <li><a href="collapsible.php">Nous rejoindre</a></li>
+        <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>
 		<li><a href="media.php">Média</a></li>
-			    <!-- Dropdown Trigger -->
- <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Client<i class="material-icons right">arrow_drop_down</i></a></li>
+
+	 <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><?php echo htmlentities(trim($_SESSION['pseudo'])); ?><i class="material-icons right">arrow_drop_down</i></a></li>
 
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
-   <li><a href="inscription.php">Inscription</a></li>
-    <li><a href="connexion.php">Connexion</a></li>
+    <li><a href="logout.php">Logout</a></li>
+    <li><a href="logout.php">Profil</a></li>
     <li class="divider"></li>
   </ul>
-      </ul>
 
+</ul>
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="index.php">Acceuil</a></li>
+        <li><a href="index_membre.php">Acceuil</a></li>
 		<li><a href="/forum">Forum</a></li>
-        <li><a href="badges.php">Notre équipe</a></li>
-        <li><a href="collapsible.php">Nous rejoindre</a></li>
+        <li><a href="equipe.php">Notre équipe</a></li>
+        <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>
 		<li><a href="media.php">Média</a></li>
-	   <li><a href="inscription.php">Inscription</a></li>
-    <li><a href="connexion.php">Connexion</a></li>
+    <li><a href="logout.php">Logout</a></li>
+    <li><a href="logout.php">Profil</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-	
   </nav>
-  
-  
-  
+
+
    <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -60,15 +59,15 @@
         <div class="row center">
           <h5 class="header col s12 light">Une équiple pleine de sérieux et enthousiaste !</h5>
         </div>
-       
+
         <br><br>
 
       </div>
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
-  
-  
+
+
         <div class="col s12 m8 offset-m2 l6 offset-l3">
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
@@ -84,21 +83,21 @@
           </div>
         </div>
       </div>
-  
+
   <p></p>
   <p></p>
-  
-  
+
+
           <div class="col s12 m8 offset-m2 l6 offset-l3">
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
-     
+
             <div class="col s10">
               <span class="black-text">
 			  <h3>Tex</h3>
-         
+
               </span>
-			  
+
             </div>
 			       <div class="col s2">
               <img src="img/aod.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
@@ -106,12 +105,12 @@
           </div>
         </div>
       </div>
-  
-  
+
+
     <p></p>
   <p></p>
-  
-  
+
+
           <div class="col s12 m8 offset-m2 l6 offset-l3">
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
@@ -121,20 +120,20 @@
             <div class="col s10">
               <span class="black-text">
 			  <h3>AOSauron</h3>
-          
+
               </span>
             </div>
           </div>
         </div>
       </div>
-  
 
-  
-  
+
+
+
       <p></p>
   <p></p>
-  
-  
+
+
           <div class="col s12 m8 offset-m2 l6 offset-l3">
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
@@ -143,23 +142,23 @@
             <div class="col s10">
               <span class="black-text">
 			  <h3>Xeriok01</h3>
-                
+
               </span>
             </div>
 			             <img src="img/aod.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
           </div>
         </div>
       </div>
-  
+
   <p></p>
   <p></p>
-  
-  
-  
+
+
+
       <p></p>
   <p></p>
-  
-  
+
+
           <div class="col s12 m8 offset-m2 l6 offset-l3">
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
@@ -174,15 +173,15 @@
           </div>
         </div>
       </div>
-  
+
   <p></p>
   <p></p>
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
    <footer class="page-footer teal">
     <div class="container">
       <div class="row">
@@ -227,6 +226,3 @@
 
   </body>
 </html>
-  
-  
-  
