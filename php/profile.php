@@ -58,7 +58,6 @@ if (isset($_SESSION['pseudo'])) {
   </nav>
 
   <?php
-  
 }
 else {
 	?>
@@ -95,65 +94,13 @@ else {
     </div>
   </nav>
   <?php
-}
-  
-  if (isset($_SESSION['pseudo'])) {
-	try
-		{
-	$bdd = new PDO('mysql:host=localhost;dbname=gta5_gamemode_essential;charset=utf8', 'root', 'Pierre1998');
-		}
-	catch (Exception $e)
-		{
-    die('Erreur : ' . $e->getMessage());
-		}
-  	$reponse = $bdd->query('SELECT * FROM bans');
+} // termine le else : si il est pas co afficher navbar client
+  if (isset($_SESSION['pseudo'])) { 
+	echo '<center><p>Tu es connecté sous le nom de '.$_SESSION['pseudo'].'</p></center>';
+	echo '<center><p>Bientôt tu pourras changés d adresse Mail / Avatar MDP !</p></center>';
+	
 	?>
-	<style>
-	th {
-	font-weight: 900;
-    color: #ffffff;
-    background: #ea6153;
-	}
-	td	{
-	padding: 6px 12px;
-    padding: 2px 12px;
-	}
-
-	td:hover{background-color:cyan;}
-	th:hover:before{
-	content: '>>';
-	}
-	</style>
-<center>
-
-<table>
-	<thead>
-		<tr>
-			<th>Identifier</th>
-			<th>Raison</th>
-			<th>Expiration</th>
-		</tr>
-	</thead>
-<?php
-// On affiche chaque entrée une à une
-while ($donnees = $reponse->fetch())
-{
-?>
-	<tbody>
-        <tr>
-            <td><?php echo $donnees['banned'];?></td>
-            <td><?php echo $donnees['reason'];?></td>
-            <td><?php echo $donnees['expires'];?></td>
-        </tr>
-	</tbody>
-
-<?php
-}
-$reponse->closeCursor(); // Termine le traitement de la requête
-?>
-   </table>
-</center>
-
+  
     <footer class="page-footer teal">
     <div class="container">
       <div class="row">
@@ -176,10 +123,10 @@ $reponse->closeCursor(); // Termine le traitement de la requête
     </div>
   </footer>
 <?php
-  }
+}
   else {
 	  echo '<center><p>Vous devez être connecté pour voir cette page.</p>';
-  
+
 	?>
 
 	<footer class="page-footer teal">

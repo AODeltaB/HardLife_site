@@ -6,6 +6,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="logo.png" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>HardLife RP</title>
@@ -38,7 +39,7 @@ if (isset($_SESSION['pseudo'])) {
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
     <li><a href="logout.php">Logout</a></li>
-    <li><a href="logout.php">Profil</a></li>
+    <li><a href="profile.php">Profil</a></li>
     <li class="divider"></li>
   </ul>
       <ul id='dropdown2' class='dropdown-content'>
@@ -55,7 +56,7 @@ if (isset($_SESSION['pseudo'])) {
         <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>
 		<li><a href="media.php">Média</a></li>
     <li><a href="logout.php">Logout</a></li>
-    <li><a href="logout.php">Profil</a></li>
+    <li><a href="profile.php">Profil</a></li>
     <li><a href="banlist.php">Banlist</a></li>
     <li><a href="leaderboard.php">Leaderboard</a></li>
     <li class="divider"></li>
@@ -141,100 +142,6 @@ else {
   
   <p></p>
   <p></p>
-  
-  
-          <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <div class="card-panel grey lighten-5 z-depth-1">
-          <div class="row valign-wrapper">
-     
-            <div class="col s10">
-              <span class="black-text">
-			  <h3>Tex</h3>
-         
-              </span>
-			  
-            </div>
-			       <div class="col s2">
-              <img src="img/aod.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-            </div>
-          </div>
-        </div>
-      </div>
-  
-  
-    <p></p>
-  <p></p>
-  
-  
-          <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <div class="card-panel grey lighten-5 z-depth-1">
-          <div class="row valign-wrapper">
-            <div class="col s2">
-              <img src="img/aod.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-            </div>
-            <div class="col s10">
-              <span class="black-text">
-			  <h3>AOSauron</h3>
-          
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-
-  
-  
-      <p></p>
-  <p></p>
-  
-  
-          <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <div class="card-panel grey lighten-5 z-depth-1">
-          <div class="row valign-wrapper">
-            <div class="col s2">
-            </div>
-            <div class="col s10">
-              <span class="black-text">
-			  <h3>Xeriok01</h3>
-                
-              </span>
-            </div>
-			             <img src="img/aod.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-          </div>
-        </div>
-      </div>
-  
-  <p></p>
-  <p></p>
-  
-  
-  
-      <p></p>
-  <p></p>
-  
-  
-          <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <div class="card-panel grey lighten-5 z-depth-1">
-          <div class="row valign-wrapper">
-            <div class="col s2">
-              <img src="img/aod.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-            </div>
-            <div class="col s10">
-              <span class="black-text">
-			  <h3>Skyzou</h3>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-  <p></p>
-  <p></p>
-  
-  
-  
-  
   
   
    <footer class="page-footer teal">
