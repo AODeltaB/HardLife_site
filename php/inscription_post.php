@@ -15,7 +15,7 @@ if(isset($_POST['submit']))
 			$rows = mysql_num_rows($reg);
 			if($rows==0)
 			{
-				$query = mysql_query("INSERT INTO membres VALUES('', '$username', '$password', '$mail')");
+				$query = mysql_query("INSERT INTO membres VALUES('', '$username', '$password', '$mail', '')");
 				die("Inscription terminée ! <a href='connexion.php'> connectez</a> vous");
 			}else echo "Pseudo pas disponnible";
 		} else echo"Les mots de passes doivent être identique !";

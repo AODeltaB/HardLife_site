@@ -11,7 +11,6 @@
 </head>
 <body class="blurBg-false" style="background-color:#EBEBEB">
 
-
  <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.php" class="brand-logo">HardLife RP</a>
@@ -45,7 +44,7 @@
     </div>
   </nav>
 
-	<form method="POST" action="connexion.php">
+	<form method="POST" action="connexion_post.php">
 	<p>
   <label for="pseudo">Pseudo</label><br />
 	<input type="text" name="pseudo" id="pseudo" size="30" />

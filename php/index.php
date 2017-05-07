@@ -1,7 +1,12 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 
 <html lang="fr">
 <head>
+<link rel="icon" href="logo.png" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>HardLife RP</title>
@@ -12,6 +17,9 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+ <?php
+if (isset($_SESSION['pseudo'])) {
+?>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.php" class="brand-logo">HardLife RP</a>
@@ -21,8 +29,51 @@
         <li><a href="equipe.php">Notre équipe</a></li>
         <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>
 		<li><a href="media.php">Média</a></li>
+	 <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><?php echo htmlentities(trim($_SESSION['pseudo'])); ?><i class="material-icons right">arrow_drop_down</i></a></li>
+	 <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Stats<i class="material-icons right">arrow_drop_down</i></a></li>
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="logout.php">Logout</a></li>
+    <li><a href="logout.php">Profil</a></li>
+    <li class="divider"></li>
+  </ul>
+      <ul id='dropdown2' class='dropdown-content'>
+    <li><a href="banlist.php">Banlist</a></li>
+    <li><a href="leaderboard.php">Leaderboard</a></li>
+    <li class="divider"></li>
+  </ul>
 
-	 <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Client<i class="material-icons right">arrow_drop_down</i></a></li>
+</ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.php">Acceuil</a></li>
+		<li><a href="/forum">Forum</a></li>
+        <li><a href="equipe.php">Notre équipe</a></li>
+        <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>
+		<li><a href="media.php">Média</a></li>
+    <li><a href="logout.php">Logout</a></li>
+    <li><a href="logout.php">Profil</a></li>
+	<li><a href="banlist.php">Banlist</a></li>
+    <li><a href="leaderboard.php">Leaderboard</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <?php
+}
+else {
+?>
+	  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.php" class="brand-logo">HardLife RP</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.php">Accueil</a></li>
+    <li><a href="/forum">Forum</a></li>
+        <li><a href="equipe.php">Notre équipe</a></li>
+        <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>
+    <li><a href="media.php">Média</a></li>
+
+   <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Client<i class="material-icons right">arrow_drop_down</i></a></li>
 
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
@@ -34,16 +85,19 @@
 </ul>
       <ul id="nav-mobile" class="side-nav">
         <li><a href="index.php">Acceuil</a></li>
-		<li><a href="/forum">Forum</a></li>
+    <li><a href="/forum">Forum</a></li>
         <li><a href="equipe.php">Notre équipe</a></li>
         <li><a href="https://discord.gg/h2uhwUW">Discord</a></li>
-		<li><a href="media.php">Média</a></li>
+    <li><a href="media.php">Média</a></li>
     <li><a href="inscription.php">Inscription</a></li>
     <li><a href="connexion.php">Connexion</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+  <?php
+}
+?>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -54,7 +108,7 @@
           <h5 class="header col s12 light">Un serveur GTA V RP basé sur le Fun !</h5>
         </div>
         <div class="row center">
-          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Commencez !</a>
+          <a href="inscription.php" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Commencez !</a>
         </div>
         <br><br>
 

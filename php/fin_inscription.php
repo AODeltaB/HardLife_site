@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-	<meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>Confirmation d'inscription - HardLife RP</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+                
 	<center><div class="preloader-wrapper active">
     <div class="spinner-layer spinner-red-only">
       <div class="circle-clipper left">
@@ -24,14 +24,14 @@
       </div>
     </div>
   </div>
-			</center>
+</center>
+
 <?php
-				echo '<div id="ok"><center>Inscription réussi. Vous allez être redirigé vers l accueil</center></div>
-				<script type="text/javascript"> window.setTimeout("location=(\'index.php\');",3000) </script>'
-
+				echo "<div id='ok'><center>Inscription reussi. Vous allez etre redirige a l accueil !</center></div>                        
+				<script type='text/javascript'> window.setTimeout('location=(\'index.php\');',3000) </script>"               
 ?>
-
-
+		
+		
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
@@ -39,3 +39,5 @@
 		</body>
 
 </html>
+
+
