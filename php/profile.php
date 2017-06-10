@@ -97,6 +97,7 @@ else {
 } // termine le else : si il est pas co afficher navbar client
   if (isset($_SESSION['pseudo'])) { 
 	echo '<center><p>Tu es connecté sous le nom de '.$_SESSION['pseudo'].'</p></center>';
+	echo '<center><p>Ton Email est'.$_SESSION['mail'].'</p></center>';
 	echo '<center><p>Bientôt tu pourras changés d adresse Mail / Avatar MDP !</p></center>';
 	
 	?>

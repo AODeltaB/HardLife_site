@@ -1,5 +1,4 @@
 <?php
-
 // Définition des variables
 $db_host = 'localhost';
 $db_user = 'root';
@@ -11,5 +10,4 @@ try {
 } catch (PDOException $e) {
     echo 'Connexion échouée : ' . $e->getMessage();
 }
-
  ?>

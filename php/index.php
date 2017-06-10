@@ -128,7 +128,7 @@ else {
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
             <h5 class="center">Un serveur performant !</h5>
 
-            <p class="light">Serveur by Jacky Tunning.</p>
+            <p class="flow-text">Serveur by Jacky Tunning.</p>
           </div>
         </div>
 
@@ -137,7 +137,7 @@ else {
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
             <h5 class="center">Une ambiance conviviale !</h5>
 
-            <p class="light">Serveur 90% RP (Faut bien rigoler des fois avec des Events WTF ! :D)</p>
+            <p class="flow-text">Serveur 90% RP (Faut bien rigoler des fois avec des Events WTF ! :D)</p>
           </div>
         </div>
 
@@ -146,8 +146,8 @@ else {
             <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
             <h5 class="center">Des Admins à votre écoute !</h5>
 
-            <p class="light"> - AO_DeltaB</p>
-			<p class="light"> - DD</p>
+            <p class="flow-text"> - AO_DeltaB</p>
+			<p class="flow-text"> - DD</p>
           </div>
         </div>
       </div>
@@ -174,17 +174,12 @@ else {
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Nous aider ?</h4>
-          <p class="left-align light">Vous voulez nous aider à financer le serveur ?</p>
-		  <p class="left-align light">Nous disposons d'une adresse PayPal : gmod.hardlife.rp@gmail.com</p>
-
-<center>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="YVEAZQYMV4TGL">
-<input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
-<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-</form>
-</center>
+          <p class="left-align light flow-text">Vous voulez nous aider à financer le serveur ?</p>
+		  <p class="left-align light flow-text">Nous disposons d'une adresse PayPal :</p>
+<a href="https://www.paypal.me/hardliferp/">
+<img type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="2" height="1">
+</a>
         </div>
       </div>
 

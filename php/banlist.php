@@ -58,7 +58,7 @@ if (isset($_SESSION['pseudo'])) {
   </nav>
 
   <?php
-
+  
 }
 else {
 	?>
@@ -96,7 +96,7 @@ else {
   </nav>
   <?php
 }
-
+  
   if (isset($_SESSION['pseudo'])) {
 	try
 		{
@@ -179,7 +179,7 @@ $reponse->closeCursor(); // Termine le traitement de la requête
   }
   else {
 	  echo '<center><p>Vous devez être connecté pour voir cette page.</p>';
-
+  
 	?>
 
 	<footer class="page-footer teal">

@@ -110,8 +110,12 @@ else {
       <div class="video-container">
         <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
-  
-  
+  <center>
+	<div class="row">
+	<img class="responsive-img" src="background.jpg">
+    </div>
+	<p class="flow-text">Image réalisé par ..username.. pour le serveur</p>
+   </center>
     <footer class="page-footer teal">
     <div class="container">
       <div class="row">
@@ -121,21 +125,9 @@ else {
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Option</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
           <h5 class="white-text">Sociabilité</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Discord</a></li>
           </ul>
         </div>
       </div>

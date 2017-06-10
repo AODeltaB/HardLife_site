@@ -105,7 +105,9 @@ else {
 		{
     die('Erreur : ' . $e->getMessage());
 		}
-  	$requete_money = $bdd->query('SELECT * FROM `users` ORDER BY `users`.`money` DESC LIMIT 0, 15');
+  	$requete_money = $bdd->query('SELECT * FROM `users` ORDER BY `users`.`bankbalance` DESC LIMIT 0, 15');
+	$maxmoney = $bdd->query('SELECT SUM(money) as totalmoney FROM users');
+	$maxmoneybank = $bdd->query('SELECT SUM(bankbalance) as bankmoney FROM `users`');
 	?>
 	<style>
 	th {
@@ -125,7 +127,7 @@ else {
 	</style>
 <center>
 
-<table>
+<table class="responsive-table">
 	<thead>
 		<tr>
 			<th>Identifier</th>
@@ -140,16 +142,17 @@ while ($donnes_money = $requete_money->fetch())
 ?>
 	<tbody>
         <tr>
-            <td><?php echo $donnes_money['identifier'];?></td>
-            <td><?php echo $donnes_money['money'];?></td>
+            <td><?php echo $donnes_money['Nom'];?></td>
+            <td><?php echo $donnes_money['bankbalance'];?></td>
         </tr>
 	</tbody>
-
 <?php
 }
 $requete_money->closeCursor(); // Termine le traitement de la requête
 ?>
    </table>
+   <br />
+
 </center>
 
     <footer class="page-footer teal">
@@ -178,7 +181,7 @@ $requete_money->closeCursor(); // Termine le traitement de la requête
   }
   else {
 	  echo '<center><p>Vous devez être connecté pour voir cette page.</p>';
-
+  
 	?>
 
 	<footer class="page-footer teal">
