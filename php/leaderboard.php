@@ -99,7 +99,7 @@ else {
   if (isset($_SESSION['pseudo'])) {
 	try
 		{
-	$bdd = new PDO('mysql:host=localhost;dbname=gta5_gamemode_essential;charset=utf8', 'root', 'Pierre1998');
+	$bdd = new PDO('mysql:host=localhost;dbname=gta5_gamemode_essential;charset=utf8', 'root', 'root');
 		}
 	catch (Exception $e)
 		{
@@ -178,7 +178,7 @@ $requete_money->closeCursor(); // Termine le traitement de la requête
   }
   else {
 	  echo '<center><p>Vous devez être connecté pour voir cette page.</p>';
-  
+
 	?>
 
 	<footer class="page-footer teal">

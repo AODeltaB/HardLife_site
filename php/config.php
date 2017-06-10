@@ -1,9 +1,10 @@
 <?php
 
 // Définition des variables
-$dsn = 'mysql:dbname=siteweb;host=127.0.0.1';
-$user = 'root';
-$password = 'Pierre1998';
+$db_host = 'localhost';
+$db_user = 'root';
+$db_password = 'root';
+$db_name = 'siteweb';
 
 try {
     $bdd = new PDO($dsn, $user, $password);

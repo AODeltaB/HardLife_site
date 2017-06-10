@@ -9,7 +9,7 @@ if(isset($_POST['submit']))
 	if($username&&$password&&password_confirm&&$mail) {
 		if($password==$password_confirm) {
 			$password = md5($password);
-			$connect = mysql_connect('localhost','root','Pierre1998') or die ('Error');
+			$connect = mysql_connect('localhost','root','root') or die ('Error');
 			mysql_select_db('siteweb');
 			$reg = mysql_query("SELECT * FROM membres WHERE pseudo='$username'");
 			$rows = mysql_num_rows($reg);
